@@ -1,32 +1,122 @@
-**AI Hiring Agent (GenAI Project)**
+# 🤖 Agentic AI Hiring Assistant
 
-**Overview**
-Built an AI-based hiring assistant to automate resume vs job description evaluation using Python and FastAPI. The system uses rule-based logic combined with optional LLM API support to improve candidate matching and semantic understanding.
+## 📌 Overview
+This project is an intelligent AI Hiring Assistant designed to evaluate resumes against job descriptions using structured reasoning and transparency.  
+It simulates how a real hiring analyst evaluates candidates by checking skills, evidence, relevance and gaps rather than simple keyword matching.
 
-**Key Features**
+The system uses a hybrid approach:
+- Rule-based evaluation for consistency
+- Optional LLM reasoning for deeper understanding
 
-Resume and job description comparison
+It generates:
+- Skill match score
+- Project quality score
+- Risk flags
+- Evidence summary
+- Final hiring verdict
 
-Skill extraction and normalization
+---
 
-Evidence-based candidate scoring
+## 🏗️ System Architecture
 
-Optional LLM-based evaluation for better reasoning
+### Step 1: Input Processing
+Resume and job description are provided as text input.
 
-Modular and extendable architecture
+### Step 2: Parsing Layer
+Extracts:
+- Skills  
+- Projects  
+- Experience  
+- Job requirements  
 
-**Tech Stack**
-Python, FastAPI, NLP, LLM API, Prompt Engineering
+### Step 3: Skill Normalization
+Maps similar skills into standard form to improve matching accuracy.
 
-**How it works**
+Example:
+```
+react.js → REACT_JS  
+restful api → REST_API  
+context api basic → CONTEXT_API  
+```
 
-User uploads resume and job description
+### Step 4: Evidence Detection
+Checks whether skills appear:
+- Only in skills section (weak)
+- Inside projects (strong)
+- With context (medium/strong)
 
-System extracts and normalizes skills
+### Step 5: Scoring Engine
+Calculates:
+- Skill match score  
+- Project quality score  
+- Risk penalties  
 
-Rule-based + LLM evaluation performed
+Final verdict:
+```
+Shortlist | Review | Reject
+```
 
-Candidate score and decision generated
+### Step 6: Optional LLM Reasoning
+Used only when deeper reasoning is required:
+- Ambiguous skill context  
+- Weak confidence score  
+- Explanation generation  
 
-**Note**
-This project focuses on practical AI decision-making and modular design. Built for experimentation and continuous improvement.
+---
+
+## ⚙️ Tech Stack
+- Python  
+- FastAPI  
+- NLP  
+- LLM API (Groq – Llama/Mixtral)  
+- Modular agent pipeline  
+
+---
+
+## ▶️ Run Project
+```
+git clone https://github.com/yourusername/ai-hiring-agent.git
+cd ai-hiring-agent
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Open:
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## 📊 Output
+The system generates structured evaluation including:
+- Resume analysis  
+- Skill match score  
+- Risk flags  
+- Final hiring verdict  
+
+---
+
+## ⚠️ Limitations
+- Accuracy is iterative  
+- Resume parsing depends on text format  
+- LLM reasoning limited due to API constraints  
+- Built for logic demonstration, not full production  
+
+---
+
+## 🚀 Future Improvements
+- Better semantic matching  
+- Interview question generator  
+- Dashboard UI  
+- Cloud deployment  
+- Multi-resume processing  
+
+---
+
+## 👨‍💻 Author
+Jignesh Thacker  
+AI/ML & Generative AI Enthusiast  
+GitHub: https://github.com/Jignesh03
+<img width="1494" height="730" alt="Screenshot 2026-01-27 230136" src="https://github.com/user-attachments/assets/0e625c25-bf4d-49ce-b562-e18dc1e3021a" />
+<img width="1406" height="527" alt="Screenshot 2026-01-27 233618" src="https://github.com/user-attachments/assets/3a33b607-1696-4135-b69b-2f98c57bc1ba" />
