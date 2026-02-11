@@ -1,7 +1,32 @@
-I built an Agentic AI Hiring Assistant to automate resume vs job description evaluation using a hybrid approach.
-Rule-based logic ensures consistency and transparency, while optional LLM integration improves semantic understanding and reasoning.
+**AI Hiring Agent (GenAI Project)**
 
-I used FastAPI for scalable backend design, skill normalization to handle real-world variations, and evidence-based scoring to reduce keyword stuffing.
-Due to time and API constraints, live deployment was not prioritized, and accuracy is iterative rather than absolute.
+**Overview**
+Built an AI-based hiring assistant to automate resume vs job description evaluation using Python and FastAPI. The system uses rule-based logic combined with optional LLM API support to improve candidate matching and semantic understanding.
 
-The project is designed to be explainable, modular, and extendable, focusing on intelligent decision-making rather than simple keyword matching.
+**Key Features**
+
+Resume and job description comparison
+
+Skill extraction and normalization
+
+Evidence-based candidate scoring
+
+Optional LLM-based evaluation for better reasoning
+
+Modular and extendable architecture
+
+**Tech Stack**
+Python, FastAPI, NLP, LLM API, Prompt Engineering
+
+**How it works**
+
+User uploads resume and job description
+
+System extracts and normalizes skills
+
+Rule-based + LLM evaluation performed
+
+Candidate score and decision generated
+
+**Note**
+This project focuses on practical AI decision-making and modular design. Built for experimentation and continuous improvement.
