@@ -96,6 +96,8 @@ The system generates structured evaluation including:
 - Final hiring verdict  
 
 ---
+## Structure
+<img width="800" height="596" alt="image" src="https://github.com/user-attachments/assets/fa0a62b4-a202-4e2d-b712-686538adf2ed" />
 
 ## ⚠️ Limitations
 - Accuracy is iterative  
@@ -106,6 +108,7 @@ The system generates structured evaluation including:
 ---
 
 ## 🚀 Future Improvements
+
 - Better semantic matching  
 - Interview question generator  
 - Dashboard UI  
@@ -119,4 +122,4 @@ Jignesh Thacker
 AI/ML & Generative AI Enthusiast  
 GitHub: https://github.com/Jignesh03
 <img width="1494" height="730" alt="Screenshot 2026-01-27 230136" src="https://github.com/user-attachments/assets/0e625c25-bf4d-49ce-b562-e18dc1e3021a" />
-<img width="1406" height="527" alt="Screenshot 2026-01-27 233618" src="https://github.com/user-attachments/assets/3a33b607-1696-4135-b69b-2f98c57bc1ba" />
+<img width="1388" height="570" alt="Screenshot 2026-01-27 231143" src="https://github.com/user-attachments/assets/883b6c1b-e468-493e-b10b-ef5ce340d054" />
